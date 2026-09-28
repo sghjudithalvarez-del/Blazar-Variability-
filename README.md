@@ -1,37 +1,23 @@
-# Blazar-Variability-
-Astronomy 101: Blazar Variability & Forecasting
-Welcome to the official repository for our Astronomy 101 project focused on blazar variability analysis and time-series forecasting!
+# lightcurves
 
-Team Members:
-Diego Castellanos Sepúlveda
-Daniel Miranda 
-Ezequiel Gómez Valencia
-Agatha Liewald
-Judith Alvarez Treviño
+This is the lightcurves repository. Check it out: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/swagner-astro/lightcurves/blob/main/illustration_lightcurve.ipynb) <br>
 
-Repository Structure & Branches
-This repository is organized into specific branches to keep our code, notes, and interactive resources modular and easy to navigate:
+See here for scientific application of this code:
+https://pos.sissa.it/395/868
 
-1. astronomy-101 (Main Branch)
-Overview: The foundational hub containing the basic information needed for the project.
+## lc.py
+Initialize a LightCurve object based on time, flux and flux_error.
+Study its Bayesian block representation (based on Scargle et al. 2013  https://ui.adsabs.harvard.edu/abs/2013arXiv1304.2818S/abstract ).<br>
+Characterize flares (start, peak, end time) with the HOP algorithm (following Meyer et al. 2019 https://ui.adsabs.harvard.edu/abs/2019ApJ...877...39M/abstract ). There are four different methods to define flares (baseline, half, flip, sharp) as illustrated in the Jupyter Notebook.
 
-2. variability Branch
-Overview: Dedicated to the analysis of blazar light curves and flux variability.
-Contents:
-Python scripts and Jupyter notebooks for light curve preprocessing.
-Statistical analysis tools (e.g., calculating fractional variability, structure functions).
-Visualization scripts for flux variations over time.
+## hop.py
+Initialize a Hopject to consider parameters of an individual flare.
 
-3. prophet Branch
-Overview: Dedicated to time-series forecasting of blazar behavior using Prophet model.
-Contents:
-Model training and evaluation pipelines.
-Forecasting plots and predictive performance metrics.
+## lc_set
+Initialize a (large) sample of light curves to study the distribution of flare parameters whithin that sample.<br>
 
-4. kahoots (Separate Branch / Resource)
-Overview: Interactive learning and review materials.
 
-Contents:
-Links to custom Kahoot! trivia games created to test and reinforce team knowledge on astronomy concepts, blazars, and our code methodologies.
-
-For any questions or contributions, please reach out to any of the team members listed above!
+## Reference
+If you use this code please cite: <br>
+Wagner, S. M., Burd, P., Dorner, D., et al. 2021, PoS, ICRC2021, 868
+<url>https://ui.adsabs.harvard.edu/abs/2022icrc.confE.868W/abstract</url>
