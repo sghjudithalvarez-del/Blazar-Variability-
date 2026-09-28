@@ -3,11 +3,11 @@ Astronomy 101: Blazar Variability & Forecasting
 Welcome to the official repository for our Astronomy 101 project focused on blazar variability analysis and time-series forecasting!
 
 Team Members:
-- Diego Castellanos Sepúlveda
-- Daniel Emiliano Miranda Ortuño
-- Ezequiel Gómez Valencia
-- Agatha Adaluz Liewald Suárez
-- Judith Alvarez Treviño
+- Diego Castellanos Sepúlveda a01413066@tec.mx
+- Daniel Emiliano Miranda Ortuño a01662138@tec.mx
+- Ezequiel Gómez Valencia a01667568@tec.mx
+- Agatha Adaluz Liewald Suárez a00841137@tec.mx
+- Judith Alvarez Treviño a01234568@tec.mx
 
 Repository Structure & Branches
 This repository is organized into specific branches to keep our code, notes, and interactive resources modular and easy to navigate:
